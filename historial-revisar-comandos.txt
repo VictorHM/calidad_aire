@@ -1,0 +1,800 @@
+    1  sudo vim /etc/modules
+    2  sudo apt-get install vim
+    3  sudo vim /etc/modules
+    4  sudo vim /etc/default/grub
+    5  reboot
+    6  ll
+    7  cat 61-ThinkPad-X240-keyboard.hwdb 
+    8  systemd-hwdb update
+    9  sudo systemd-hwdb update
+   10  cat 61-ThinkPad-X240-keyboard.hwdb 
+   11  sudo vim 61-ThinkPad-X240-keyboard.hwdb 
+   12  sudo systemd-hwdb update
+   13  mv 61-ThinkPad-X240-keyboard.hwdb 70-ThinkPad-X240-keyboard.hwdb 
+   14  sudo mv 61-ThinkPad-X240-keyboard.hwdb 70-ThinkPad-X240-keyboard.hwdb 
+   15  ll
+   16  sudo systemd-hwdb update
+   17  less 70-ThinkPad-X240-keyboard.hwdb 
+   18  cat 70
+   19  cat 70-ThinkPad-X240-keyboard.hwdb 
+   20  sudo vim 70-ThinkPad-X240-keyboard.hwdb 
+   21  evtest
+   22  sudo apt-get install evtest
+   23  evtest
+   24  sudo evtest
+   25  sudo evtest /dev/input/by-path/platform-i8042-serio-0-event-kbd
+   26  sudo udevadm hwdb --update
+   27  sudo vim 70-ThinkPad-X240-keyboard.hwdb 
+   28  sudo udevadm hwdb --update
+   29  sudo vim 70-ThinkPad-X240-keyboard.hwdb 
+   30  rm 70-ThinkPad-X240-keyboard.hwdb 
+   31  sudo rm 70-ThinkPad-X240-keyboard.hwdb 
+   32  sudo udevadm hwdb --update
+   33  vim 70-pointingstick.hwdb 
+   34  sudo vim 70-ThinkPad-X240-keyboard.hwdb 
+   35  sudo udevadm hwdb --update
+   36  sudo vim /etc/network/if-up.d/ledblink
+   37  cd /etc/pm/sleep.d/
+   38  ll
+   39  sudo vim 70diskled
+   40  reboot
+   41  sudo vim /lib/udev/hwdb.d/61-ThinkPad-X240-keyboard.hwdb
+   42  udevadm hwdb --update
+   43  sudo udevadm hwdb --update
+   44  sudo vim /lib/udev/hwdb.d/61-ThinkPad-X240-keyboard.hwdb
+   45  cd /lib/udev/hwdb.d/
+   46  ll
+   47  ls
+   48  cat 60-keyboard.hwdb 
+   49  les 60-keyboard.hwdb 
+   50  less 60-keyboard.hwdb 
+   51  sudo vim 60-keyboard.hwdb 
+   52  sudo apt-get install gnome-tweak-tool
+   53  gnome-tweaks 
+   54  sudo mv /etc/pm/sleep.d/70diskled /etc/pm/sleep.d/70_diskled
+   55  man evemu-device
+   56  history
+   57  man udevadm
+   58  dpkg -L systemd-services
+   59  man system-hwdb
+   60  system-hwdb -h
+   61  sudo systemd-hwdb -h
+   62  sudo systemd-hwdb update -h
+   63  sudo systemd-hwdb update
+   64  cd /sys/class/
+   65  ll
+   66  ll dma
+   67  cd dma
+   68  ll
+   69  cd ..
+   70  cd leds/
+   71  ll
+   72  echo idle-disk
+   73  resume|thaw
+   74  cd /etc/pm/sleep.d/
+   75  ll
+   76  chmod u+x g+x
+   77  man chmod
+   78  sudo chmod u+x o+x
+   79  sudo chmod u+x o+x 70_diskled 
+   80  man chmod
+   81  sudo chmod uo+x 70_diskled 
+   82  ll
+   83  reboot
+   84  ll
+   85  chmod ug+x displaylink-driver-5.3.1.34.run 
+   86  sudo ./displaylink-driver-5.3.1.34.run 
+   87  ticker -w NET, AAPL, TSLA
+   88  ./ticker -w NET, AAPL, TSLA
+   89  ./ticker -w NET,AAPL,TSLA,AMD
+   90  ssh -h
+   91  man ssh
+   92  ssh-keygen
+   93  cat /home/victor/.ssh/id_rsa.pub
+   94  ll
+   95  pwd
+   96  mkdir development
+   97  cd development/
+   98  git clone git@github.com:VictorHM/fundamental_analisis.git
+   99  sudo apt-get install git
+  100  git clone git@github.com:VictorHM/fundamental_analisis.git
+  101  ll
+  102  cd fundamental_analisis/
+  103  cd ..
+  104  git clone git@github.com:achannarasappa/ticker.git
+  105  ll
+  106  cd ticker/
+  107  curl -Ls https://api.github.com/repos/achannarasappa/ticker/releases/latest | grep -wo "https.*linux-amd64*.tar.gz" | wget -qi - && tar -xf ticker*.tar.gz \
+  108  ll
+  109  mkdir bin
+  110  cd bin
+  111  curl -Ls https://api.github.com/repos/achannarasappa/ticker/releases/latest | grep -wo "https.*linux-amd64*.tar.gz" | wget -qi - && tar -xf ticker*.tar.gz && chmod +x ./ticker \
+  112  sudo apt-get install curl
+  113  curl -Ls https://api.github.com/repos/achannarasappa/ticker/releases/latest | grep -wo "https.*linux-amd64*.tar.gz" | wget -qi - && tar -xf ticker*.tar.gz && chmod +x ./ticker
+  114  ll
+  115  cd ../Downloads/
+  116  ll
+  117  rm 'code_1.53.2-1613044664_amd64 (1).deb'
+  118  LL
+  119  ll
+  120  chmod uo+x
+  121  chmod uo+x Anaconda3-2020.11-Linux-x86_64.sh 
+  122  ll
+  123  sudo ./Anaconda3-2020.11-Linux-x86_64.sh 
+  124  conda config --set auto_activate_base false
+  125  conda
+  126  git clone git@github.com:VictorHM/vim_config.git
+  127  ll
+  128  cd vim_config/
+  129  ll
+  130  vim install_vim_conf.sh
+  131  echo $HOME
+  132  ll
+  133  chmod uo+x install_vim_conf.sh 
+  134  ll
+  135  ./install_vim_conf.sh 
+  136  ll ../.vim
+  137  ll .vim
+  138  vim install_vim_conf.sh 
+  139  ./install_vim_conf.sh 
+  140  man mkdir
+  141  rm -r ../.vim
+  142  ll ..
+  143  rm -r ../.vimrc 
+  144  ./install_vim_conf.sh 
+  145  ll ..
+  146  ll ...vim
+  147  ll ../.vim
+  148  ll ../.vim/colors
+  149  vim
+  150  gtt
+  151  git status
+  152  git add install_vim_conf.sh 
+  153  gtt
+  154  git status
+  155  git commit -m "Script to move files and folders to its destination. First version."
+  156  git config --global user.email "rcpoetics@gmail.com"
+  157  git config --global user.name "Victor Hevia Martin"
+  158  git commit -m "Script to move files and folders to its destination. First version."
+  159  git status
+  160  git push
+  161  sudo apt-get install spyder
+  162  spyder
+  163  conda install spyder=4.2.1
+  164  apt-get install conda
+  165  sudo apt-get install conda
+  166  cd ..
+  167  sudo apt install spyder3
+  168  conda update anaconda
+  169  ll /
+  170  ll /root
+  171  sudo ll /root
+  172  sudo ls /root
+  173  sudo apt-get remove conda
+  174  conda config --set auto_activate_base false
+  175  cd ../development/fundamental_analisis/
+  176  git status
+  177  git branch
+  178  git fetch --all
+  179  git branch
+  180  git branch -a
+  181  git pull remotes/origin/first_module_vhm
+  182  git pull --all
+  183  git branch
+  184  git fetch origin first_module_vhm
+  185  git branch
+  186  git pull origin first_module_vhm
+  187  git branch
+  188  git status
+  189  cd ..
+  190  rm -r fundamental_analisis/
+  191  s
+  192  ll
+  193  git clone git@github.com:VictorHM/fundamental_analisis.git
+  194  git branch
+  195  cd fundamental_analisis/
+  196  git branch
+  197  git pull --all
+  198  git branch
+  199  git branch -a
+  200  git branch -r
+  201  git status
+  202  git fetch --all
+  203  git branch
+  204  git branch -a
+  205  git pull remote/origin first_module_vhm
+  206  git remote -v
+  207  git fetch origin first_module_vhm
+  208  git checkout -b first_module_vhm origin/first_module_vhm
+  209  git pull origin first_module_vhm
+  210  git branch
+  211  conda list
+  212  sudo conda list
+  213  cd Downloads/
+  214  bash Anaconda3-2020.11-Linux-x86_64.sh 
+  215  conda list
+  216  source /home/victor/anaconda3/bin/activate
+  217  conda activate base
+  218  conda update anaconda
+  219  conda update spyder
+  220  cd Downloads/
+  221  ll
+  222  cat Anaconda3-2020.11-Linux-x86_64.sh 
+  223  clear
+  224  ll
+  225  sudo ls /root
+  226  sudo ls /root/snap
+  227  sudo ls -a /root
+  228  sudo cat /root/.bashrc
+  229  cd ../development/fundamental_analisis/
+  230  conda --help
+  231  ll
+  232  cd development/
+  233  l
+  234  git clone git@github.com:DidierRLopes/GamestonkTerminal.git
+  235  ll
+  236  cd GamestonkTerminal/
+  237  ll
+  238  cd ../
+  239  cd fundamental_analisis/
+  240  ll
+  241  conda -h
+  242  cd ../
+  243  cd GamestonkTerminal/
+  244  conda create --name stonkterminal python=3.6.8
+  245  conda activate stonkterminal
+  246  ll
+  247  pip install -h
+  248  pip install -r requirements.txt 
+  249  pip -h
+  250  pip search scipy
+  251  pip install scipy
+  252  ll
+  253  vim api_keys.sh
+  254  cat api_keys.sh 
+  255  . api_keys.sh 
+  256  echo $GT_API_KEY_ALPHAVANTAGE
+  257  source api_keys.sh 
+  258  echo $GT_API_KEY_ALPHAVANTAGE
+  259  eval "$(./api_keys.sh)"
+  260  echo $GT_API_KEY_ALPHAVANTAGE
+  261  ll
+  262  python gamestonk_terminal.py 
+  263  pip install -r requirements.txt 
+  264  pip install pandas
+  265  python gamestonk_terminal.py 
+  266  pip install holidays
+  267  python gamestonk_terminal.py 
+  268  pip install iso8601
+  269  python gamestonk_terminal.py 
+  270  pip install matplotlib
+  271  python gamestonk_terminal.py 
+  272  pip install FundamentalAnalysis
+  273  python gamestonk_terminal.py 
+  274  ll
+  275  cat requirements.txt 
+  276  pip install zipp==3.4.0
+  277  python gamestonk_terminal.py 
+  278  pip install requests
+  279  python gamestonk_terminal.py 
+  280  conda pip install -r requirements.txt 
+  281  conda install -r requirements.txt 
+  282  conda -h
+  283  conda install requirements.txt 
+  284  conda install -h
+  285  conda install --file requirements.txt 
+  286  python gamestonk_terminal.py 
+  287  pip install alpha_vantage
+  288  python gamestonk_terminal.py 
+  289  pip -h
+  290  pip install finviz
+  291  python gamestonk_terminal.py 
+  292  pip install bs4
+  293  python gamestonk_terminal.py 
+  294  pip install rapidfuzz
+  295  python gamestonk_terminal.py 
+  296  pip install yfinance
+  297  python gamestonk_terminal.py 
+  298  pip install pandas_ta
+  299  python gamestonk_terminal.py 
+  300  pip install dataclasses
+  301  python gamestonk_terminal.py 
+  302  pip install prettytable
+  303  python gamestonk_terminal.py 
+  304  pip install psaw
+  305  python gamestonk_terminal.py 
+  306  pip install praw
+  307  python gamestonk_terminal.py 
+  308  pip install quandl
+  309  python gamestonk_terminal.py 
+  310  pip install flair
+  311  python gamestonk_terminal.py 
+  312  pip install pytrends
+  313  python gamestonk_terminal.py 
+  314  pip install TimeSeriesCrossValidation
+  315  git grep cuda
+  316  gtt
+  317  git status
+  318  source api_keys.sh 
+  319  echo $GT_API_KEY_ALPHAVANTAGE
+  320  export GT_API_KEY_ALPHAVANTAGE=VG6X2WBWZDGPJPKT
+  321  echo $GT_API_KEY_ALPHAVANTAGE
+  322  . api_keys.sh 
+  323  echo $GT_API_KEY_ALPHAVANTAGE
+  324  ll
+  325  chmod uo+x api_keys.sh 
+  326  ll
+  327  ./api_keys.sh 
+  328  echo $GT_API_KEY_ALPHAVANTAGE
+  329  eval "$(./api_keys.sh)"
+  330  echo $GT_API_KEY_ALPHAVANTAGE
+  331  shutdown now
+  332  cd development/
+  333  git clone git@github.com:VictorHM/calidad_aire.git
+  334  ll
+  335  docker
+  336  sudo apt-get update
+  337  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+  338  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  339  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  340  sudo apt-get update
+  341  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  342  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  343    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  344  sudo apt-get update
+  345  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  346  docker
+  347  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  348    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  349  docker run -p 8888:8888 jupyter/base-notebook
+  350  conda install -c conda-forge jupyterlab
+  351  jupyter lab
+  352  cd calidad_aire/
+  353  ll
+  354  ll src/
+  355  cd src/
+  356  cat scrapper.py 
+  357  python3 scrapper.py 
+  358  conda list
+  359  ll
+  360  ll .
+  361  cd ..
+  362  ll
+  363  cat history_session.txt 
+  364  clear
+  365  ll
+  366  conda create --name calidad_aire scipy pandas numpi
+  367  conda config --env --add channels conda-forge
+  368  conda create --name calidad_aire scipy pandas numpy
+  369  conda activate calidad_aire
+  370  cd src/
+  371  python3 scrapper.py 
+  372  conda install requests
+  373  python3 scrapper.py 
+  374  conda install bs4
+  375  python3 scrapper.py 
+  376  conda install wget
+  377  python3 scrapper.py 
+  378  conda install wget
+  379  python scrapper.py 
+  380  cat scrapper.py 
+  381  python
+  382  conda env list
+  383  python --version
+  384  conda install -c anaconda wget.
+  385  conda install -c anaconda wget
+  386  python scrapper.py 
+  387  python
+  388  pip install wget
+  389  python scrapper.py 
+  390  vim scrapper.py 
+  391  python scrapper.py 
+  392  vim scrapper.py 
+  393  python scrapper.py 
+  394  vim scrapper.py 
+  395  gtt
+  396  cd ..
+  397  gtt
+  398  git status
+  399  git restore src/scrapper.py
+  400  gtt
+  401  git status
+  402  vim scrapper.py 
+  403  git status
+  404  git pull
+  405  cd src/
+  406  ll
+  407  vim scrapper.py 
+  408  cat scrapper.py 
+  409  java -version
+  410  spark --version
+  411  sudo apt install apt-transport-https curl
+  412  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  413  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+  414  sudo apt update
+  415  sudo apt install brave-browser
+  416  sudo apt autoremove
+  417  ll
+  418  cd Downloads/
+  419  ll
+  420  cat JD2Setup_x64.sh 
+  421  clear
+  422  ll
+  423  vim JD2Setup_x64.sh 
+  424  chmod u+x JD2Setup_x64.sh 
+  425  ll
+  426  sudo ./JD2Setup_x64.sh 
+  427  cd ../../root/
+  428  cd /
+  429  ll root
+  430  sudo ll root
+  431  su
+  432  sudo su
+  433  cd ~
+  434  ll
+  435  cd Downloads/
+  436  ll
+  437  man chown
+  438  sudo chown victor:victor Tierra-Sabor-TrancasBarrancas.mp4 
+  439  sudo chown victor:victor Tierra-Sabor-TrancasBarrancas.m4a 
+  440  ll
+  441  mv Tierra-Sabor-TrancasBarrancas.m* DescargaJDownload/
+  442  ll
+  443  sudo chown victor:victor DescargaJDownload/
+  444  mv Tierra-Sabor-TrancasBarrancas.m* DescargaJDownload/
+  445  ll
+  446  python
+  447  conda activate criptodashboard
+  448  python
+  449  ll ~/.vim/colors/
+  450  cat
+  451  cd src/
+  452  ll
+  453  cat config.cfg 
+  454  export binance_api-"jF3lwTtk1iQgdCGIIjbfqmhpbimf0hSX1wCjkjLY2SrdEGPoNOTa2I441m1fvM1l"
+  455  export binance_api="jF3lwTtk1iQgdCGIIjbfqmhpbimf0hSX1wCjkjLY2SrdEGPoNOTa2I441m1fvM1l"
+  456  echo $binance_api
+  457  export binance_secret=BcQJ2HuG12AFfybDhiJ2CH1yKR02duTvmKLl7S0F7fqeWii8HQREoViYAjuHjNCG
+  458  python myDashboards.py 
+  459  conda activate myDashboard
+  460  conda env list
+  461  conda activate criptodashboard
+  462  python myDashboards.py 
+  463  streamlit run myDashboards.py 
+  464  cd de
+  465  cd development/
+  466  ll
+  467  cd myDashboards/
+  468  ll
+  469  conda list
+  470  conda env list
+  471  conda activate criptodashboard
+  472  history
+  473  conda install --file requirements.txt 
+  474  pip install streamlit==0.62.1
+  475  pip install python-binance
+  476  pip install binance==0.3
+  477  ll
+  478  cd src/
+  479  ll
+  480  cat config_temp.py 
+  481  cp config_temp.py config.cfg
+  482  ll
+  483  vim config.cfg 
+  484  ll
+  485  vim myDashboards.py 
+  486  gtt
+  487  cd ..
+  488  gtt
+  489  git status
+  490  alias gtt='git status'
+  491  gtt
+  492  alias
+  493  alias gtgraph='git log --graph'
+  494  gtgraph
+  495  git show 04d3e7148efee7d7d633f90eaa976632b4248330
+  496  git show 1f8ef051fe442e867dda2c087ea578f1a4f0d00e
+  497  gtgraph
+  498  git show 04d3e7148efee7d7d633f90eaa976632b4248330
+  499  git show 1f8ef051fe442e867dda2c087ea578f1a4f0d00e
+  500  gtgraph
+  501  git show 3e24594cb4f40d9bd8992866cc018db0579237dc
+  502  git show 04d3e7148efee7d7d633f90eaa976632b4248330
+  503  gtgraph
+  504  git show 1f8ef051fe442e867dda2c087ea578f1a4f0d00e
+  505  git reset --hard 1f8ef051fe442e867dda2c087ea578f1a4f0d00e
+  506  gtgraph
+  507  cd src/
+  508  ll
+  509  vim myDashboards.py 
+  510  cd ..
+  511  gtt
+  512  gta src/myDashboards.py 
+  513  alias gta='git add'
+  514  gta src/myDashboards.py 
+  515  gtt
+  516  git commit --amend
+  517  gtt
+  518  git push -f
+  519  vim
+  520  vim src/myDashboards.py 
+  521  vim ~/.vimrc
+  522  vim --help
+  523  vim --version
+  524  ll ~/.vim/
+  525  git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+  526  ll ~/.vim/
+  527  vim --help
+  528  vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+  529  vim
+  530  screen
+  531  sudo apt-get install screen
+  532  vim
+  533  gtt
+  534  gta src/myDashboards.py 
+  535  git commit -m "Rewrite it for classes."
+  536  history
+  537  ll
+  538  cd development/
+  539  ll
+  540  git clone git@github.com:securityscorecard/bluepipe.git
+  541  gtb
+  542  git branch
+  543  cd bluepipe/
+  544  gtb
+  545  git branch
+  546  git fetch --all
+  547  git branch
+  548  git remote show origin
+  549  git fetch origin ilya-kafka-spikes:ilya-kafka-spikes
+  550  gtt
+  551  git status
+  552  gtb
+  553  git branch
+  554  git checkout ilya-kafka-spikes
+  555  ./scripts/install_cc_requirements.sh 
+  556  cat scripts/install_cc_requirements.sh 
+  557  sudo apt-get install libunistring autoconf automake pkg-config gettext libtool libidn2 coreutils bash libiconv cmake curl jq xmlstarlet gzip lz4 zip libunistring gettext doxygen pandoc google-perftools gnu-tar postgres grep
+  558  alias
+  559  ll
+  560  mkdir build.debug
+  561  cd build.debug/
+  562  cmake ..
+  563  sudo apt-get install cmake
+  564  sudo apt-get install libunistring-dev
+  565  cat ./scripts/install_cc_requirements.sh 
+  566  cat ../scripts/install_cc_requirements.sh 
+  567  sudo apt-get install libidn2
+  568  sudo apt-get install libidn2-dev
+  569  sudo apt-get install libiconv-dev
+  570  sudo apt-get install libiconv
+  571  sudo apt-get update -y
+  572  sudo apt-get install -y libiconv
+  573  sudo apt-get install -y libiconv-hook-dev
+  574  ../scripts/install_cc_requirements.sh 
+  575  cat ../scripts/install_cc_requiremen
+  576  cat ../scripts/install_cc_requirements.sh 
+  577  sudo apt-get install libunistring autoconf automake pkg-config gettext libtool libidn2 coreutils bash libiconv cmake curl jq xmlstarlet gzip lz4 zip libunistring gettext doxygen pandoc google-perftools gnu-tar postgres grep
+  578  history
+  579  sudo apt-get install libunistring autoconf automake pkg-config gettext libtool libidn2 coreutils bash libiconv cmake curl jq xmlstarlet gzip lz4 zip libunistring gettext doxygen pandoc google-perftools gnu-tar postgres grep
+  580  tar
+  581  postgres
+  582  sudo apt-get install postgresql
+  583  history | grep libidn2
+  584  sudo apt-get install libidn2-dev
+  585  cmake ..
+  586  sudo apt-get install sqlite3
+  587  cmake ..
+  588  sqlite
+  589  sudo apt install sqlite-dev
+  590  sudo apt install sqlite
+  591  cmake ..
+  592  sudo apt-get -y install libsqlite3-dev
+  593  cmake ..
+  594  sudo apt-get install -y zlibc
+  595  cmake ..
+  596  zlib
+  597  sudo apt-get install -y zlib1g-dev
+  598  cmake ..
+  599  sudo apt-get install -y libopen 
+  600  cmake ..
+  601  ll /
+  602  ll /usr/include/
+  603  ll /usr/local/include/
+  604  sudo apt-get install libssl-dev
+  605  cmake ..
+  606  cd ..
+  607  ./scripts/update-vendor.sh 
+  608  cd build.debug/
+  609  cmake ..
+  610  sudo shutdown now
+  611  cd ../bluepipe/
+  612  cd build.debug/
+  613  cmake ..
+  614  java -version
+  615  sudo add-apt-repository ppa:webupd8team/java
+  616  sudo apt-get update
+  617  sudo apt-get remove scala-library scala
+  618  sudo wget www.scala-lang.org/files/archive/scala-2.12.1.deb
+  619  sudo dpkg -i scala-2.12.1.deb
+  620  sudo add-apt-repository ppa:webupd8team/java
+  621  sudo vim /etc/apt/sources.list
+  622  ll /etc/apt
+  623  cd /etc/apt
+  624  cat sources.list.
+  625  cat sources.list.save 
+  626  ll
+  627  ll sources.list.d/
+  628  cat sources.list.d/webupd8team-ubuntu-java-focal.list
+  629  rm sources.list.d/webupd8team-ubuntu-java-focal.list*
+  630  sudo rm sources.list.d/webupd8team-ubuntu-java-focal.list*
+  631  ll
+  632  ll sources.list.d/
+  633  ll trusted.gpg.d/
+  634  sudo rm trusted.gpg.d/webupd8team_ubuntu_java.gpg 
+  635  ll
+  636  ll preferences.d/
+  637  ll auth.conf.d/
+  638  ll apt.conf.d/
+  639  ll
+  640  cat trusted.gpg
+  641  clear
+  642  ll
+  643  cat sources.list.
+  644  cat sources.list.save 
+  645  clear
+  646  ll
+  647  sudo apt-get install -f
+  648  java -version
+  649  sudo apt-get remove scala-library scala
+  650  cd -
+  651  ll
+  652  sudo dpkg -i scala-2.12.1.deb
+  653  udo apt-get update
+  654  sudo apt-get update
+  655  sudo apt-get install scala
+  656  echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+  657  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+  658  sudo apt-get update
+  659  sudo apt-get install sbt
+  660  cd -
+  661  ll
+  662  cat trusted.gpg
+  663  clear
+  664  ll
+  665  cat sources.list
+  666  ll
+  667  cat sources.list.d/sbt.list 
+  668  sudo apt-get update
+  669  rm -r sources.list.d/sbt.list 
+  670  sudo rm -r sources.list.d/sbt.list 
+  671  sudo rm trusted.gpg; mv trusted.gpg~ trusted.gpg
+  672  ll
+  673  sudo mv trusted.gpg~ trusted.gpg
+  674  ll
+  675  ll sources.list
+  676  ll sources.list.d/
+  677  ll preferences.d/
+  678  ll auth.conf.d/
+  679  sudo apt-get install sbt
+  680  echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list
+  681  echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | sudo tee /etc/apt/sources.list.d/sbt_old.list
+  682  curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add
+  683  sudo apt-get update
+  684  sudo apt-get install sbt
+  685  scala -version
+  686  scala
+  687  cd ~/development/
+  688  ll
+  689  cd kafka_2.12-2.8.0/
+  690  wget -qO - https://packages.confluent.io/deb/6.2/archive.key | sudo apt-key add -
+  691  sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/6.2 stable main"
+  692  sudo apt-get update
+  693  sudo apt-get install librdkafka-dev
+  694  sudo apt-get update && sudo apt-get install confluent-platform
+  695  sudo apt-get install librdkafka-dev
+  696  sudo apt-get install librdkafka1 librdkafka++1 librdkafka-dev
+  697  history
+  698  sudo apt-get install librdkafka1 librdkafka++1 librdkafka-dev
+  699  sudo apt-get search librdkafka-dev
+  700  sudo apt search librdkafka-dev
+  701  sudo apt install librdkafka-dev
+  702  sudo apt search librdkafka1
+  703  sudo apt install librdkafka1
+  704  sudo apt search libssl1.0.0
+  705  sudo install libssl1.0.0
+  706  sudo apt install libssl1.0.0
+  707  dpkg --get-selections | grep hold
+  708  dpkg --get-selections
+  709  clear
+  710  ll
+  711  cd development/bluepipe/
+  712  git status
+  713  cd build.debug/
+  714  cmake ..
+  715  cd development/bluepipe/
+  716  cd build.debug/
+  717  cmake ..
+  718  sudo apt install librdkafka1
+  719  sudo apt-get autoremove
+  720  sudo apt-get autoclean
+  721  sudo apt-get update
+  722  sudo apt-get -f install
+  723  sudo apt install librdkafka-dev
+  724  history
+  725  sudo apt search confluence
+  726  sudo apt-get uninstall confluent-platform
+  727  sudo apt-get remove confluent-platform
+  728  sudo apt install librdkafka-dev
+  729  sudo apt-get autoclean
+  730  sudo apt-get -f install
+  731  sudo apt autoremove
+  732  sudo apt-get install librdkafka1 librdkafka++1 librdkafka-dev
+  733  cd ..
+  734  l
+  735  ll
+  736  ~~ll ../vim_config/.vimrc 
+  737  cat ../vim_config/.vimrc
+  738  clear
+  739  vim --version
+  740  cd ..
+  741  cd .vim/
+  742  ll
+  743  ll pack/
+  744  ll colors/
+  745  curl https://github.com/srcery-colors/srcery-vim/blob/master/colors/srcery.vim
+  746  git clone git@github.com:srcery-colors/srcery-vim.git
+  747  ll
+  748  cp srcery-vim/colors/srcery.vim colors/
+  749  ll colors/
+  750  rm -r srcery-vim/
+  751  sudo rm -r srcery-vim/
+  752  ll
+  753  cd ..
+  754  cd development/
+  755  sudo apt-get install ctags
+  756  cd ../.vim/
+  757  ll
+  758  ll pack
+  759  ll pack/vendor/
+  760  ll pack/vendor/start/
+  761  cd pack/vendor/start/
+  762  git clone https://tpope.io/vim/fugitive.git
+  763  vim -u NONE -c "helptags fugitive/doc" -c q
+  764  source ~/.bashrc 
+  765  cd ~/development/myDashboards/
+  766  gtt
+  767  git rm requirements.txt 
+  768  gta src/tests/
+  769  gtt
+  770  git rm src/myDashboards.py 
+  771  conda env list
+  772  conda activate criptodashboard
+  773  python 
+  774  python3 src/mydashboard.py 
+  775  pip install yfinance
+  776  python3 src/mydashboard.py 
+  777  git grep "Elemento"
+  778  streamlit
+  779  streamlit myDashboards.iml 
+  780  streamlit myDashboards.py
+  781  streamlit --help
+  782  streamlit run myDashboards.py
+  783  ll
+  784  streamlit run myDashboards.iml
+  785  streamlit run src/myDashboards.py
+  786  ll src/
+  787  streamlit run src/mydashboards.py
+  788  streamlit run src/mydashboard.py
+  789  cd ../my_fork_dashboard/myDashboards/
+  790  streamlit run src/mydashboard.py 
+  791  gtt
+  792  ll
+  793  git log --graph
+  794  gtt
+  795  gtc -m "Move test to its own folder."
+  796  gtt
+  797  git push
+  798  history
+  799  history | less
+  800  history > ~/development/calidad_aire/historial-revisar-comandos.txt
